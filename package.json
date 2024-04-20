@@ -1,0 +1,18 @@
+{
+  "name": "airdrop-tracker",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DefiLlama/airdrop-tracker"
+  },
+  "dependencies": {
+    "@supercharge/promise-pool": "^3.2.0",
+    "csv": "^6.3.8",
+    "dotenv": "^16.4.5",
+    "hyper-express": "^6.15.2",
+    "ioredis": "^5.4.1"
+  }
+}
