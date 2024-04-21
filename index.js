@@ -1,5 +1,5 @@
 const HyperExpress = require('hyper-express')
-const airdropConfig = require('./airdrop-config.json')
+let airdropConfig = require('./airdrop-config.json')
 const env = require('./env')
 const { initDB, getKeys } = require('./db')
 
@@ -34,19 +34,6 @@ async function main() {
       process.send('ready')
     })
     .catch((e) => console.log('Failed to start webserver on port ' + env.PORT, e))
-}
-
-
-process.on('SIGINT', shutdown);
-process.on('SIGTERM', shutdown);
-
-function shutdown() {
-  console.log('Shutting down gracefully...');
-  setTimeout(() => process.exit(0), 1000); // wait 5 seconds before forcing shutdown
-  webserver.close(() => {
-    console.log('Server has been shut down gracefully');
-    process.exit(0);
-  })
 }
 
 main()
@@ -91,4 +78,14 @@ function getTimeInFutureMinutes(minutes) {
   // add five minutes to the current time
   date.setMinutes(date.getMinutes() + minutes);
   return date.toUTCString()
+}
+
+//pulls config from github every 3 hours
+setInterval(() => updateConfig, 1000 * 60 * 60 * 3)
+
+function updateConfig() {
+  fetch('https://raw.githubusercontent.com/DefiLlama/airdrop-checker/master/airdrop-config.json')
+    .then(res => res.json())
+    .then((data) => airdropConfig = data)
+    .catch((e) => console.error('Failed to fetch airdrop config', e))
 }

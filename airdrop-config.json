@@ -1,8 +1,9 @@
 {
-  "avial": {
-    "title": "test",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.",
-    "from": "2019-01-01",
-    "to": "2019-01-31"
+  "omni": {
+    "title": "Omni - Genesis Airdrop",
+    "description": "Omni Network (Omni) is a platform designed to integrate Ethereum rollups, offering developers and users universal access to all of Ethereum’s liquidity and capabilities without compromise",
+    "twitter": "https://twitter.com/OmniFDN",
+    "discord": "https://discord.com/invite/bKNXmaX9VD",
+    "website": "https://claims.omni.network"
   }
 }

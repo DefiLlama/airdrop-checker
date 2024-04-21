@@ -5,7 +5,7 @@ const { PromisePool } = require('@supercharge/promise-pool')
 const { setKey, initDB } = require("./db")
 
 const csvConfigs = [
-  { file: 'op.csv', decimals: 18, key: 'op-1', addressField: 'address', valueField: 'total_op_eligible_to_claim' },
+  { file: 'omni.csv', decimals: 0, key: 'omni', addressField: 'address', valueField: 'amount' },
 ]
 
 async function addCsv() {
@@ -36,7 +36,7 @@ async function addCsv() {
           console.info('Invalid value for key', address, key, value)
           return;
         }
-        if (decimals) value = Math.round(value / 10 ** decimals)
+        if (decimals || decimals === 0) value = Math.round(value / 10 ** decimals)
         await setKey(address, key, value)
       })
 
