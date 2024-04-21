@@ -31,7 +31,6 @@ async function main() {
     .then(() => {
       console.timeEnd(timeKey)
       console.log('Webserver started on port ' + env.PORT)
-      process.send('ready')
     })
     .catch((e) => console.log('Failed to start webserver on port ' + env.PORT, e))
 }
