@@ -16,13 +16,15 @@ async function main() {
 
   initDB()
 
-  const subPath = env.API2_SUBPATH
   let router = webserver
 
+  /* 
+  const subPath = env.API2_SUBPATH
   if (subPath) {
     router = new HyperExpress.Router()
     webserver.use('/' + subPath, router)
   }
+  */
 
   router.get('/config', getAirdropConfig)
   router.get('/check/:keys', getAirdropInfo)
