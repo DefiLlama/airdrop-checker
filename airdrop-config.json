@@ -1,12 +1,18 @@
 {
-  "omni": {
-    "title": "Omni Network",
-    "description": "Omni Network (Omni) is a platform designed to integrate Ethereum rollups, offering developers and users universal access to all of Ethereum’s liquidity and capabilities without compromise",
-    "twitter": "OmniFDN",
-    "discord": "https://discord.com/invite/bKNXmaX9VD",
-    "page": "https://claims.omni.network"
-  },
-  "mode": {
+	"omni": {
+		"title": "Omni Network",
+		"description": "Omni Network (Omni) is a platform designed to integrate Ethereum rollups, offering developers and users universal access to all of Ethereum’s liquidity and capabilities without compromise",
+		"twitter": "OmniFDN",
+		"discord": "https://discord.com/invite/bKNXmaX9VD",
+		"page": "https://claims.omni.network",
+		"haveAirdropData": true
+	},
+	"uniswap": {
+		"title": "Uniswap",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"mode": {
 		"name": "Mode",
 		"page": "https://app.mode.network/early/",
 		"twitter": "modenetwork"
@@ -16,7 +22,9 @@
 		"page": "https://lfg.jup.ag/jup",
 		"explorer": "https://solana.fm/address/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN?cluster=mainnet-alpha",
 		"token": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
-		"chains": ["solana"],
+		"chains": [
+			"solana"
+		],
 		"twitter": "JupiterExchange",
 		"startTime": "2024-01-31T00:00:00Z",
 		"endTime": 1722438000
