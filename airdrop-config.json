@@ -9,13 +9,16 @@
 	},
 	"uniswap": {
 		"title": "Uniswap",
+		"description": "Swap, earn, and build on the leading decentralized crypto trading protocol.",
+		"twitter": "Uniswap",
 		"isActive": false,
 		"haveAirdropData": true
 	},
 	"mode": {
 		"name": "Mode",
 		"page": "https://app.mode.network/early/",
-		"twitter": "modenetwork"
+		"twitter": "modenetwork",
+		"isActive:": true
 	},
 	"jup": {
 		"name": "Jupiter",
@@ -27,12 +30,16 @@
 		],
 		"twitter": "JupiterExchange",
 		"startTime": "2024-01-31T00:00:00Z",
+		"haveAirdropData": false,
+		"isActive:":true,
 		"endTime": 1722438000
 	},
 	"alt": {
 		"name": "AltLayer",
 		"page": "https://airdrop.altlayer.io",
-		"twitter": "alt_layer"
+		"twitter": "alt_layer",
+		"haveAirdropData": false,
+		"isActive:":false
 	},
 	"stark": {
 		"name": "Starknet",
@@ -41,55 +48,75 @@
 		"token": "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
 		"twitter": "Starknet",
 		"startTime": "2024-02-20T12:00:00Z",
-		"endTime": 1718884800
+		"endTime": 1718884800,
+		"haveAirdropData": true,
+		"isActive:":true
 	},
 	"ethena": {
 		"name": "Ethena",
 		"page": "https://claim.ethena.fi/",
 		"explorer": "https://etherscan.io/token/0x57e114B691Db790C35207b2e685D4A43181e6061",
 		"token": "0x57e114B691Db790C35207b2e685D4A43181e6061",
-		"twitter": "ethena_labs"
+		"twitter": "ethena_labs",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"wormhole": {
 		"name": "Wormhole",
 		"page": "https://airdrop.wormhole.com/",
-		"twitter": "wormholecrypto"
+		"twitter": "wormholecrypto",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"aevo": {
 		"name": "Aevo",
 		"page": "https://app.aevo.xyz/aevo",
-		"twitter": "aevoxyz"
+		"twitter": "aevoxyz",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"ether-fi": {
 		"name": "ether.fi",
 		"page": "https://claim.ether.fi/",
-		"twitter": "ether_fi"
+		"twitter": "ether_fi",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"polyhedra": {
 		"name": "Polyhedra Network",
 		"page": "https://polyhedra.foundation",
-		"twitter": "PolyhedraZK"
+		"twitter": "PolyhedraZK",
+		"haveAirdropData": false,
+		"isActive:":false
 	},
 	"nim": {
 		"name": "NIM Network",
 		"page": "https://claim.nim.network/",
-		"twitter": "nim_network"
+		"twitter": "nim_network",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"kamino": {
 		"name": "Kamino",
 		"page": "https://app.kamino.finance/genesis",
-		"twitter": "KaminoFinance"
+		"twitter": "KaminoFinance",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"parcel": {
 		"name": "Parcl",
 		"page": "https://claims.parcllimited.com/",
 		"explorer": "https://solscan.io/token/4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs",
 		"token": "4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs",
-		"twitter": "Parcl"
+		"twitter": "Parcl",
+		"haveAirdropData": false,
+		"isActive:":true
 	},
 	"avail": {
 		"name": "Avail Network",
 		"page": "https://claim.availproject.org",
-		"twitter": "AvailProject"
+		"twitter": "AvailProject",
+		"haveAirdropData": false,
+		"isActive:":true
 	}
 }
