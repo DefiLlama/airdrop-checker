@@ -1,6 +1,6 @@
 {
 	"omni": {
-		"title": "Omni Network",
+		"name": "Omni Network",
 		"description": "Omni Network (Omni) is a platform designed to integrate Ethereum rollups, offering developers and users universal access to all of Ethereum’s liquidity and capabilities without compromise",
 		"twitter": "OmniFDN",
 		"discord": "https://discord.com/invite/bKNXmaX9VD",
@@ -8,7 +8,7 @@
 		"haveAirdropData": true
 	},
 	"uniswap": {
-		"title": "Uniswap",
+		"name": "Uniswap",
 		"description": "Swap, earn, and build on the leading decentralized crypto trading protocol.",
 		"twitter": "Uniswap",
 		"isActive": false,
