@@ -32,11 +32,7 @@ const csvConfigs_done = [
   { file: 'Dydx.json', decimals: 0, key: 'dydx', },
   { file: 'EUL.json', decimals: 0, key: 'eul', },
   { file: 'Hop.json', decimals: 0, key: 'hop', },
-  { file: 'shutter.csv', decimals: 0, key: 'shutter', addressField: 'address', valueField: 'amount' },
-  { file: 'starknet.csv', decimals: 0, key: 'starknet', addressField: 'address', valueField: 'amount' },
-  { file: 'saddle_finance.csv', decimals: 18, key: 'saddle', addressField: 'address', valueField: 'amount' },
-  { file: 'tornado.csv', decimals: 18, key: 'tornado', addressField: 'address', valueField: 'amount' },
-  { file: 'uniswap.csv', decimals: 0, key: 'uniswap', addressField: 'address', valueField: 'amount' },
+  { file: 'kmno_allocation.csv', decimals: 0, key: 'kamino', addressField: 'wallet', valueField: 'kmno_allocated' },
 ]
 
 const csvConfigs = [

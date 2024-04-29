@@ -7,13 +7,6 @@
 		"page": "https://claims.omni.network",
 		"haveAirdropData": true
 	},
-	"uniswap": {
-		"name": "Uniswap",
-		"description": "Swap, earn, and build on the leading decentralized crypto trading protocol.",
-		"twitter": "Uniswap",
-		"isActive": false,
-		"haveAirdropData": true
-	},
 	"mode": {
 		"name": "Mode",
 		"page": "https://app.mode.network/early/",
@@ -100,8 +93,8 @@
 		"name": "Kamino",
 		"page": "https://app.kamino.finance/genesis",
 		"twitter": "KaminoFinance",
-		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"haveAirdropData": true
 	},
 	"parcel": {
 		"name": "Parcl",
@@ -118,5 +111,82 @@
 		"twitter": "AvailProject",
 		"haveAirdropData": false,
 		"isActive:":true
+	},
+	"uniswap": {
+		"name": "Uniswap",
+		"twitter": "Uniswap",
+		"description": "Swap, earn, and build on the leading decentralized crypto trading protocol.",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"1inch": {
+		"name": "1inch",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"convex": {
+		"name": "Convex",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"cow0": {
+		"name": "Cow",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"cow1": {
+		"name": "Cow",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"curve": {
+		"name": "Curve",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"degen": {
+		"name": "Degen",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"ens": {
+		"name": "ENS",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"lido": {
+		"name": "Lido",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"op": {
+		"name": "Optimism",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"psp": {
+		"name": "Paraswap",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"dydx": {
+		"name": "Dydx",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"eul": {
+		"name": "Euler",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"hop": {
+		"name": "Hop",
+		"isActive": false,
+		"haveAirdropData": true
+	},
+	"tornado": {
+		"name": "Tornado",
+		"isActive": false,
+		"haveAirdropData": true
 	}
 }
