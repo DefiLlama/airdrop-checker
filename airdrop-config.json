@@ -112,6 +112,22 @@
 		"haveAirdropData": false,
 		"isActive:":true
 	},
+	"renzo": {
+		"name": "Renzo",
+		"page": "https://claim.renzoprotocol.com/",
+		"explorer": "https://etherscan.io/address/0x3b50805453023a91a8bf641e279401a0b23fa6f9",
+		"token": "0x3b50805453023a91a8bf641e279401a0b23fa6f9",
+		"twitter": "RenzoProtocol",
+		"haveAirdropData": false,
+		"isActive:":true
+	},
+	"eigenlayer": {
+		"name": "EigenLayer",
+		"page": "https://claims.eigenfoundation.org/",
+		"twitter": "eigenlayer",
+		"haveAirdropData": false,
+		"isActive:":true
+	},
 	"uniswap": {
 		"name": "Uniswap",
 		"twitter": "Uniswap",
