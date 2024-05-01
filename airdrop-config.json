@@ -128,6 +128,13 @@
 		"haveAirdropData": false,
 		"isActive:":true
 	},
+	"drift": {
+		"name": "Drift",
+		"page": "https://drift.foundation/",
+		"twitter": "DriftProtocol",
+		"haveAirdropData": false,
+		"isActive:":true
+	},
 	"uniswap": {
 		"name": "Uniswap",
 		"twitter": "Uniswap",
