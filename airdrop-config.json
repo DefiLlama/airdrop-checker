@@ -223,7 +223,6 @@
 		"name": "dYdX",
 		"isActive": false,
 		"haveAirdropData": true,
-		"tokenSymbol": "PSP",
 		"tokenSymbol": "DYDX"
 	},
 	"eul": {
