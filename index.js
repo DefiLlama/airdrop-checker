@@ -29,6 +29,7 @@ async function main() {
   router.get('/config', getAirdropConfig)
   router.get('/check/:keys', getAirdropInfo)
   router.get('/eigen/:key', getAirdropEigen)
+  router.get('/eigens/:key', getAirdropEigens)
 
   webserver.listen(env.PORT)
     .then(() => {
@@ -58,12 +59,32 @@ async function getAirdropInfo(req, res) {
 async function getAirdropEigen(req, res) {
   try {
     const address = req.params.key
-    const data = await fetch(
-				`https://claims.eigenfoundation.org/clique-eigenlayer-api/campaign/eigenlayer/credentials?walletAddress=${address.toLowerCase()}`
-			)
-				.then((r) => r.json())
-				.then((r) => r.data.pipelines)
+    const data = await getEigenData(address)
     successResponse(res, data)
+  } catch (e) {
+    console.error(e)
+    errorResponse(res, e)
+  }
+}
+
+function getEigenData(address) {
+  return fetch(
+    `https://claims.eigenfoundation.org/clique-eigenlayer-api/campaign/eigenlayer/credentials?walletAddress=${address.toLowerCase()}`
+  )
+    .then((r) => r.json())
+    .then((r) => r.data.pipelines)
+
+}
+
+async function getAirdropEigens(req, res) {
+  try {
+    const addresses = req.params.key.split(',')
+    const response = {}
+
+    for (const address of addresses) {
+      response[address] = await getEigenData(address)
+    }
+    successResponse(res, response)
   } catch (e) {
     console.error(e)
     errorResponse(res, e)
