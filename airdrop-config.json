@@ -5,7 +5,8 @@
 		"twitter": "OmniFDN",
 		"discord": "https://discord.com/invite/bKNXmaX9VD",
 		"page": "https://claims.omni.network",
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "OMNI"
 	},
 	"mode": {
 		"name": "Mode",
@@ -25,14 +26,16 @@
 		"startTime": "2024-01-31T00:00:00Z",
 		"haveAirdropData": false,
 		"isActive:":true,
-		"endTime": 1722438000
+		"endTime": 1722438000,
+		"tokenSymbol": "JUP"
 	},
 	"alt": {
 		"name": "AltLayer",
 		"page": "https://airdrop.altlayer.io",
 		"twitter": "alt_layer",
 		"haveAirdropData": false,
-		"isActive:":false
+		"isActive:":false,
+		"tokenSymbol": "ALT"
 	},
 	"stark": {
 		"name": "Starknet",
@@ -43,7 +46,8 @@
 		"startTime": "2024-02-20T12:00:00Z",
 		"endTime": 1718884800,
 		"haveAirdropData": true,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "STARK"
 	},
 	"ethena": {
 		"name": "Ethena",
@@ -52,49 +56,56 @@
 		"token": "0x57e114B691Db790C35207b2e685D4A43181e6061",
 		"twitter": "ethena_labs",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "ENA"
 	},
 	"wormhole": {
 		"name": "Wormhole",
 		"page": "https://airdrop.wormhole.com/",
 		"twitter": "wormholecrypto",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "W"
 	},
 	"aevo": {
 		"name": "Aevo",
 		"page": "https://app.aevo.xyz/aevo",
 		"twitter": "aevoxyz",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "AEVO"
 	},
 	"ether-fi": {
 		"name": "ether.fi",
 		"page": "https://claim.ether.fi/",
 		"twitter": "ether_fi",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "ETHFI"
 	},
 	"polyhedra": {
 		"name": "Polyhedra Network",
 		"page": "https://polyhedra.foundation",
 		"twitter": "PolyhedraZK",
 		"haveAirdropData": false,
-		"isActive:":false
+		"isActive:":false,
+		"tokenSymbol": "ZK"
 	},
 	"nim": {
 		"name": "NIM Network",
 		"page": "https://claim.nim.network/",
 		"twitter": "nim_network",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "NIM"
 	},
 	"kamino": {
 		"name": "Kamino",
 		"page": "https://app.kamino.finance/genesis",
 		"twitter": "KaminoFinance",
 		"isActive:":true,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "KMNO"
 	},
 	"parcel": {
 		"name": "Parcl",
@@ -103,14 +114,16 @@
 		"token": "4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs",
 		"twitter": "Parcl",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "PRCL"
 	},
 	"avail": {
 		"name": "Avail Network",
 		"page": "https://claim.availproject.org",
 		"twitter": "AvailProject",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "AVAIL"
 	},
 	"renzo": {
 		"name": "Renzo",
@@ -119,97 +132,116 @@
 		"token": "0x3b50805453023a91a8bf641e279401a0b23fa6f9",
 		"twitter": "RenzoProtocol",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "REZ"
 	},
 	"eigenlayer": {
 		"name": "EigenLayer",
 		"page": "https://claims.eigenfoundation.org/",
 		"twitter": "eigenlayer",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "EIGEN"
 	},
 	"drift": {
 		"name": "Drift",
 		"page": "https://drift.foundation/",
 		"twitter": "DriftProtocol",
 		"haveAirdropData": false,
-		"isActive:":true
+		"isActive:":true,
+		"tokenSymbol": "DRIFT"
 	},
 	"uniswap": {
 		"name": "Uniswap",
 		"twitter": "Uniswap",
 		"description": "Swap, earn, and build on the leading decentralized crypto trading protocol.",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "UNI"
 	},
 	"1inch": {
 		"name": "1inch",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "1INCH"
 	},
 	"convex": {
 		"name": "Convex",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "CVX"
 	},
 	"cow0": {
 		"name": "Cow",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "COW"
 	},
 	"cow1": {
 		"name": "Cow",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "COW"
 	},
 	"curve": {
 		"name": "Curve",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "CRV"
 	},
 	"degen": {
 		"name": "Degen",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "DEGEN"
 	},
 	"ens": {
 		"name": "ENS",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "ENS"
 	},
 	"lido": {
 		"name": "Lido",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "LDO"
 	},
 	"op": {
 		"name": "Optimism",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "OP"
 	},
 	"psp": {
 		"name": "Paraswap",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "PSP"
 	},
 	"dydx": {
-		"name": "Dydx",
+		"name": "dYdX",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "PSP",
+		"tokenSymbol": "DYDX"
 	},
 	"eul": {
 		"name": "Euler",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "EUL"
 	},
 	"hop": {
 		"name": "Hop",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "HOP"
 	},
 	"tornado": {
 		"name": "Tornado",
 		"isActive": false,
-		"haveAirdropData": true
+		"haveAirdropData": true,
+		"tokenSymbol": "TON"
 	}
 }
