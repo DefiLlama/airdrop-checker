@@ -8,6 +8,15 @@
 		"haveAirdropData": true,
 		"tokenSymbol": "OMNI"
 	},
+	"myso": {
+		"name": "Myso",
+		"description": "The Place for bespoke Covered Calls and DeFi Loans",
+		"twitter": "MysoFinance",
+		"discord": "https://discord.com/invite/AUTBZdxpUP",
+		"page": "https://app.myso.finance/airdrop",
+		"haveAirdropData": true,
+		"tokenSymbol": "MYSO"
+	},
 	"mode": {
 		"name": "Mode",
 		"page": "https://app.mode.network/early/",

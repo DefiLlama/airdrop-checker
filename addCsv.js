@@ -33,6 +33,7 @@ const csvConfigs_done = [
   { file: 'EUL.json', decimals: 0, key: 'eul', },
   { file: 'Hop.json', decimals: 0, key: 'hop', },
   { file: 'kmno_allocation_v3.csv', decimals: 0, key: 'kamino', addressField: 'wallet', valueField: 'kmno_allocated' },
+  { file: 'myso-airdrop-prod.json', decimals: 18, key: 'myso', },
 ]
 
 const csvConfigs = [
@@ -78,7 +79,7 @@ async function addCsv() {
   }
 }
 
-async function readCSV({ file, delimiter = ',' }) {
+async function readCSV({ file, delimiter = ',', key }) {
   const isJson = file.endsWith('.json')
   const csvFolder = './csv-data/'
   if (!isJson) {
@@ -89,8 +90,14 @@ async function readCSV({ file, delimiter = ',' }) {
         .on('data', row => csvData.push(row))
         .on('end', () => resolve(csvData)))
   }
-
   const data = require(csvFolder + file)
+
+  switch (key) {
+    case 'myso':
+      return Object.entries(data).map(([address, { amount }]) => [address, amount])
+  }
+
+ 
   if (typeof data.Data === 'object' && typeof data.Info === 'object') {
     return Object.entries(data.Data).map(([address, { tokens }]) => [address, tokens])
   }
