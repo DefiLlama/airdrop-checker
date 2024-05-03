@@ -6,7 +6,8 @@
 		"discord": "https://discord.com/invite/bKNXmaX9VD",
 		"page": "https://claims.omni.network",
 		"haveAirdropData": true,
-		"tokenSymbol": "OMNI"
+		"tokenSymbol": "OMNI",
+		"isActive:": true
 	},
 	"myso": {
 		"name": "Myso",
@@ -15,7 +16,8 @@
 		"discord": "https://discord.com/invite/AUTBZdxpUP",
 		"page": "https://app.myso.finance/airdrop",
 		"haveAirdropData": true,
-		"tokenSymbol": "MYSO"
+		"tokenSymbol": "MYSO",
+		"isActive:": true
 	},
 	"mode": {
 		"name": "Mode",
