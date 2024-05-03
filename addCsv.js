@@ -37,6 +37,7 @@ const csvConfigs_done = [
 ]
 
 const csvConfigs = [
+  { file: 'jup_allocation_final.csv', decimals: 0, key: 'jup', addressField: 'pubkey', valueField: 'amount' },
 ]
 
 async function addCsv() {
@@ -97,7 +98,7 @@ async function readCSV({ file, delimiter = ',', key }) {
       return Object.entries(data).map(([address, { amount }]) => [address, amount])
   }
 
- 
+
   if (typeof data.Data === 'object' && typeof data.Info === 'object') {
     return Object.entries(data.Data).map(([address, { tokens }]) => [address, tokens])
   }
