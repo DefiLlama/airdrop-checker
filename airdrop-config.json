@@ -21,7 +21,13 @@
 	},
 	"mode": {
 		"name": "Mode",
-		"page": "https://app.mode.network/early/",
+		"page": "https://claim.mode.network",
+		"explorer": "https://explorer.mode.network/address/0xDfc7C877a950e49D2610114102175A06C2e3167a",
+		"token": "0xDfc7C877a950e49D2610114102175A06C2e3167a",
+		"tokenSymbol": "MODE",
+		"chains": [
+			"mode"
+		],
 		"twitter": "modenetwork",
 		"isActive:": true
 	},
