@@ -176,6 +176,14 @@
 		"haveAirdropData": true,
 		"tokenSymbol": "UNI"
 	},
+	"ekubo": {
+		"name": "Ekubo",
+		"twitter": "EkuboProtocol",
+		"description": "The most powerful AMM ever on @Starknet",
+		"isActive": true,
+		"haveAirdropData": true,
+		"tokenSymbol": "EKUBO"
+	},
 	"1inch": {
 		"name": "1inch",
 		"isActive": false,

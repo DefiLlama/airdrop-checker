@@ -34,10 +34,11 @@ const csvConfigs_done = [
   { file: 'Hop.json', decimals: 0, key: 'hop', },
   { file: 'kmno_allocation_v3.csv', decimals: 0, key: 'kamino', addressField: 'wallet', valueField: 'kmno_allocated' },
   { file: 'myso-airdrop-prod.json', decimals: 18, key: 'myso', },
+  { file: 'jup_allocation_final.csv', decimals: 0, key: 'jup', addressField: 'pubkey', valueField: 'amount' },
+  { file: 'ekubo.csv', decimals: 0, key: 'ekubo', },
 ]
 
 const csvConfigs = [
-  { file: 'jup_allocation_final.csv', decimals: 0, key: 'jup', addressField: 'pubkey', valueField: 'amount' },
 ]
 
 async function addCsv() {
