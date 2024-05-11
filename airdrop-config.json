@@ -7,7 +7,7 @@
 		"page": "https://claims.omni.network",
 		"haveAirdropData": true,
 		"tokenSymbol": "OMNI",
-		"isActive:": true
+		"isActive": true
 	},
 	"myso": {
 		"name": "Myso",
@@ -17,7 +17,7 @@
 		"page": "https://app.myso.finance/airdrop",
 		"haveAirdropData": true,
 		"tokenSymbol": "MYSO",
-		"isActive:": true
+		"isActive": true
 	},
 	"mode": {
 		"name": "Mode",
@@ -29,7 +29,7 @@
 			"mode"
 		],
 		"twitter": "modenetwork",
-		"isActive:": true
+		"isActive": true
 	},
 	"jup": {
 		"name": "Jupiter",
@@ -42,7 +42,7 @@
 		"twitter": "JupiterExchange",
 		"startTime": "2024-01-31T00:00:00Z",
 		"haveAirdropData": true,
-		"isActive:":true,
+		"isActive":true,
 		"endTime": 1722438000,
 		"tokenSymbol": "JUP"
 	},
@@ -51,7 +51,7 @@
 		"page": "https://airdrop.altlayer.io",
 		"twitter": "alt_layer",
 		"haveAirdropData": false,
-		"isActive:":false,
+		"isActive":false,
 		"tokenSymbol": "ALT"
 	},
 	"stark": {
@@ -63,7 +63,7 @@
 		"startTime": "2024-02-20T12:00:00Z",
 		"endTime": 1718884800,
 		"haveAirdropData": true,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "STARK"
 	},
 	"ethena": {
@@ -73,7 +73,7 @@
 		"token": "0x57e114B691Db790C35207b2e685D4A43181e6061",
 		"twitter": "ethena_labs",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "ENA"
 	},
 	"wormhole": {
@@ -81,7 +81,7 @@
 		"page": "https://airdrop.wormhole.com/",
 		"twitter": "wormholecrypto",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "W"
 	},
 	"aevo": {
@@ -89,7 +89,7 @@
 		"page": "https://app.aevo.xyz/aevo",
 		"twitter": "aevoxyz",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "AEVO"
 	},
 	"ether-fi": {
@@ -97,7 +97,7 @@
 		"page": "https://claim.ether.fi/",
 		"twitter": "ether_fi",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "ETHFI"
 	},
 	"polyhedra": {
@@ -105,7 +105,7 @@
 		"page": "https://polyhedra.foundation",
 		"twitter": "PolyhedraZK",
 		"haveAirdropData": false,
-		"isActive:":false,
+		"isActive":false,
 		"tokenSymbol": "ZK"
 	},
 	"nim": {
@@ -113,14 +113,14 @@
 		"page": "https://claim.nim.network/",
 		"twitter": "nim_network",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "NIM"
 	},
 	"kamino": {
 		"name": "Kamino",
 		"page": "https://app.kamino.finance/genesis",
 		"twitter": "KaminoFinance",
-		"isActive:":true,
+		"isActive":true,
 		"haveAirdropData": true,
 		"tokenSymbol": "KMNO"
 	},
@@ -131,7 +131,7 @@
 		"token": "4LLbsb5ReP3yEtYzmXewyGjcir5uXtKFURtaEUVC2AHs",
 		"twitter": "Parcl",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "PRCL"
 	},
 	"avail": {
@@ -139,7 +139,7 @@
 		"page": "https://claim.availproject.org",
 		"twitter": "AvailProject",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "AVAIL"
 	},
 	"renzo": {
@@ -149,7 +149,7 @@
 		"token": "0x3b50805453023a91a8bf641e279401a0b23fa6f9",
 		"twitter": "RenzoProtocol",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "REZ"
 	},
 	"eigenlayer": {
@@ -157,7 +157,7 @@
 		"page": "https://claims.eigenfoundation.org/",
 		"twitter": "eigenlayer",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "EIGEN"
 	},
 	"drift": {
@@ -165,7 +165,7 @@
 		"page": "https://drift.foundation/",
 		"twitter": "DriftProtocol",
 		"haveAirdropData": false,
-		"isActive:":true,
+		"isActive":true,
 		"tokenSymbol": "DRIFT"
 	},
 	"uniswap": {
