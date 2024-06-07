@@ -56,7 +56,6 @@ async function fetchMeritRewards(campaignIdsList) {
     if(addressesEligible.length == 0) {
       throw new Error("Data returned by Merkl API empty");
     }
-    console.log(addressesEligible);
     for (const user of addressesEligible) {
       if(user.unclaimed > 0) {
         const userCurrentbalance = eligibleAddresses.get(user.recipient);
