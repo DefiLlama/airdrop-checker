@@ -36,6 +36,7 @@ const csvConfigs_done = [
   { file: 'myso-airdrop-prod.json', decimals: 18, key: 'myso', },
   { file: 'jup_allocation_final.csv', decimals: 0, key: 'jup', addressField: 'pubkey', valueField: 'amount' },
   { file: 'ekubo.csv', decimals: 0, key: 'ekubo', },
+  { file: 'zk.csv', decimals: 0, key: 'zk', addressField: 'userId', valueField: 'tokenAmount' },
 ]
 
 const csvConfigs = [
@@ -61,6 +62,7 @@ async function addCsv() {
     const timeKey = `${key} took`
     console.time(timeKey)
     console.info(`Adding ${csvData.length} records for`, key)
+    let i = 0
 
     await PromisePool.withConcurrency(100)
       .for(csvData)
@@ -68,6 +70,9 @@ async function addCsv() {
         if (idx % 10000 === 0) console.info('Processed', Number(100 * idx / csvData.length).toFixed(2), '%')
         const address = record[addressField]
         let value = record[valueField]
+        // if (++i < 15)
+        // console.log('address', address, 'value', value) 
+        // return;
         if (isNaN(+value)) {
           console.info('Invalid value for key', address, key, value)
           return;

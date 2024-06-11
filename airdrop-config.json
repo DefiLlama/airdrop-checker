@@ -1,4 +1,14 @@
 {
+	"zk": {
+		"name": "ZK Nation",
+		"description": "ZK Nation unites individuals, organizations, and technologies to realize theZK Credo, expand freedom and accelerate intentional innovation.",
+		"twitter": "thezknation",
+		"discord": "https://join.zksync.dev",
+		"page": "https://claim.zknation.io",
+		"haveAirdropData": true,
+		"tokenSymbol": "ZK",
+		"isActive:": true
+	},
 	"omni": {
 		"name": "Omni Network",
 		"description": "Omni Network (Omni) is a platform designed to integrate Ethereum rollups, offering developers and users universal access to all of Ethereum’s liquidity and capabilities without compromise",
