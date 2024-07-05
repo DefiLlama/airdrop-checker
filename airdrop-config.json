@@ -7,7 +7,8 @@
 		"page": "https://claim.zknation.io",
 		"haveAirdropData": true,
 		"tokenSymbol": "ZK",
-		"isActive:": true
+		"isActive:": true,
+		"endTime": 1735862400
 	},
 	"omni": {
 		"name": "Omni Network",
@@ -92,7 +93,7 @@
 		"page": "https://airdrop.wormhole.com/",
 		"twitter": "wormholecrypto",
 		"haveAirdropData": false,
-		"isActive":true,
+		"isActive":false,
 		"tokenSymbol": "W"
 	},
 	"aevo": {
