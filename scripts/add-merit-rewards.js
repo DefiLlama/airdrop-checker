@@ -1,4 +1,5 @@
-const { PromisePool } = require('@supercharge/promise-pool')
+const { PromisePool } = require('@supercharge/promise-pool');
+const { setKey, initDB } = require('../db');
 
 const angleMeritCampaignsListWETH = [
   "0x85b36549d9743068d2db487b6d30b8f0309f2e027710e9c9fcbdf9478e4da8ce", // round 1 weth
@@ -21,28 +22,36 @@ const angleMeritCampaignsListGHO = [
 
 
 async function addMeritRewards() {
+  initDB()
   const eligibleAddressesWETH = await fetchMeritRewards(angleMeritCampaignsListWETH);
   const eligibleAddressesGHO = await fetchMeritRewards(angleMeritCampaignsListGHO);
 
   const eligibleAddressesWETHArray = Array.from(eligibleAddressesWETH);
   const eligibleAddressesGHOArray = Array.from(eligibleAddressesGHO);
 
-  await uploadMeritRewardsToDB(eligibleAddressesWETHArray, "Aave Merit wETH");
-  await uploadMeritRewardsToDB(eligibleAddressesGHOArray, "Aave Merit GHO");
+  await uploadMeritRewardsToDB(eligibleAddressesWETHArray, "am-weth");
+  await uploadMeritRewardsToDB(eligibleAddressesGHOArray, "am-gho");
 }
 
 async function uploadMeritRewardsToDB(eligibleAddressesArray, key) {
+  console.info(key, Object.values(eligibleAddressesArray).length + ' records')
   await PromisePool.withConcurrency(100)
-  .for(eligibleAddressesArray)
-  .process(async (record, idx) => {
-    if (idx % 10000 === 0) console.info('Processed', Number(100 * idx / eligibleAddressesArray.length).toFixed(2), '%')
-    await setKey(record[0], key, record[1])
-  })
+    .for(eligibleAddressesArray)
+    .process(async (record, idx) => {
+      const [address, value] = record;
+      if (isNaN(+value)) {
+        console.info('Invalid value for key', address, key, value)
+        return;
+      }
+      if (idx % 100 === 0) console.info('Processed', Number(100 * idx / eligibleAddressesArray.length).toFixed(2), '%', key)
+      await setKey(address, key, value)
+    })
 }
 
 async function fetchMeritRewards(campaignIdsList) {
   const eligibleAddresses = new Map([]);
   for (campaignId of campaignIdsList) {
+    console.info('Fetching Merit Rewards for', campaignId)
     let addressesEligible;
     try {
       addressesEligible = await fetch(
@@ -52,19 +61,19 @@ async function fetchMeritRewards(campaignIdsList) {
     } catch (e) {
       throw new Error(`Failed to fetch data from Merkl API: ${e}`);
     }
-    if(!addressesEligible) {
+    if (!addressesEligible) {
       throw new Error("Data returned by Merkl API undefined");
     }
-    if(addressesEligible.length == 0) {
+    if (addressesEligible.length == 0) {
       throw new Error("Data returned by Merkl API empty");
     }
     for (const user of addressesEligible) {
-      if(user.unclaimed > 0) {
+      if (user.unclaimed > 0) {
         const userCurrentbalance = eligibleAddresses.get(user.recipient);
-        if(userCurrentbalance) {
-          eligibleAddresses.set(user.recipient, userCurrentbalance + user.unclaimed/10**18);
+        if (userCurrentbalance) {
+          eligibleAddresses.set(user.recipient, userCurrentbalance + user.unclaimed / 10 ** 18);
         } else {
-          eligibleAddresses.set(user.recipient, user.unclaimed/10**18);
+          eligibleAddresses.set(user.recipient, user.unclaimed / 10 ** 18);
         }
       }
     }
@@ -73,3 +82,8 @@ async function fetchMeritRewards(campaignIdsList) {
 }
 
 addMeritRewards()
+.catch(console.error)
+.then(() => {
+  console.info('Exiting now.')
+  process.exit(0)
+})

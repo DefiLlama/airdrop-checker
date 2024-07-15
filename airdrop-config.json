@@ -279,5 +279,19 @@
 		"isActive": false,
 		"haveAirdropData": true,
 		"tokenSymbol": "TON"
+	},
+	"am-weth": {
+		"name": "Aave Merit wETH",
+		"page": "https://apps.aavechan.com/merit",
+		"isActive": true,
+		"haveAirdropData": true,
+		"tokenSymbol": "WETH"
+	},
+	"am-gho": {
+		"name": "Aave Merit GHO",
+		"page": "https://apps.aavechan.com/merit",
+		"isActive": true,
+		"haveAirdropData": true,
+		"tokenSymbol": "GHO"
 	}
 }
