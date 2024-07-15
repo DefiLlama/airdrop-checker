@@ -15,6 +15,8 @@ const angleMeritCampaignsListGHO = [
   "0xed2693f82f6659dfde101b22e07f3648beb246509c5d902b74c7f67ac914a2a8", // round 3 stkGHO
   "0x8667c4b4cdb311d8b14186a772bf193590513cb0d778966ef27508a2eabbaf97", // round 4 GHO
   "0xc40e9a082cd5eb072457c4281d6de2825b37a7268a98d66b667c504f65180ed5", // round 4 stkGHO
+  "0xdde60534492d508e142d275e4ec3f1ed75daf3f8120d1464cf4e0e1d42b3fff4", // round 5 GHO
+  "0xbe0620e21d3e93bfbb0b80117bec84284e4fecac7031f47698f62cc6a392bd5b", // round 5 stkGHO
 ];
 
 
