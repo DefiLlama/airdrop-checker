@@ -1,5 +1,5 @@
-const { PromisePool } = require('@supercharge/promise-pool');
-const { setKey, initDB } = require('../db');
+const { PromisePool } = require("@supercharge/promise-pool");
+const { setKey, initDB } = require("../db");
 
 const angleMeritCampaignsListWETH = [
   "0x85b36549d9743068d2db487b6d30b8f0309f2e027710e9c9fcbdf9478e4da8ce", // round 1 weth
@@ -18,13 +18,18 @@ const angleMeritCampaignsListGHO = [
   "0xc40e9a082cd5eb072457c4281d6de2825b37a7268a98d66b667c504f65180ed5", // round 4 stkGHO
   "0xdde60534492d508e142d275e4ec3f1ed75daf3f8120d1464cf4e0e1d42b3fff4", // round 5 GHO
   "0xbe0620e21d3e93bfbb0b80117bec84284e4fecac7031f47698f62cc6a392bd5b", // round 5 stkGHO
+  "0x83780c63749e4ca810316ed0ee9d1d48e283f6c5cb6cb07c9548e9c99e77abb4", // round 6 GHO
+  "0x7e94c7d1bdd69ee22f5593ec788ef903e45204552a82bf541a68dcb4ed251232", // round 6 stkGHO
 ];
 
-
 async function addMeritRewards() {
-  initDB()
-  const eligibleAddressesWETH = await fetchMeritRewards(angleMeritCampaignsListWETH);
-  const eligibleAddressesGHO = await fetchMeritRewards(angleMeritCampaignsListGHO);
+  initDB();
+  const eligibleAddressesWETH = await fetchMeritRewards(
+    angleMeritCampaignsListWETH
+  );
+  const eligibleAddressesGHO = await fetchMeritRewards(
+    angleMeritCampaignsListGHO
+  );
 
   const eligibleAddressesWETHArray = Array.from(eligibleAddressesWETH);
   const eligibleAddressesGHOArray = Array.from(eligibleAddressesGHO);
@@ -34,30 +39,35 @@ async function addMeritRewards() {
 }
 
 async function uploadMeritRewardsToDB(eligibleAddressesArray, key) {
-  console.info(key, Object.values(eligibleAddressesArray).length + ' records')
+  console.info(key, Object.values(eligibleAddressesArray).length + " records");
   await PromisePool.withConcurrency(100)
     .for(eligibleAddressesArray)
     .process(async (record, idx) => {
       const [address, value] = record;
       if (isNaN(+value)) {
-        console.info('Invalid value for key', address, key, value)
+        console.info("Invalid value for key", address, key, value);
         return;
       }
-      if (idx % 100 === 0) console.info('Processed', Number(100 * idx / eligibleAddressesArray.length).toFixed(2), '%', key)
-      await setKey(address, key, value)
-    })
+      if (idx % 100 === 0)
+        console.info(
+          "Processed",
+          Number((100 * idx) / eligibleAddressesArray.length).toFixed(2),
+          "%",
+          key
+        );
+      await setKey(address, key, value);
+    });
 }
 
 async function fetchMeritRewards(campaignIdsList) {
   const eligibleAddresses = new Map([]);
   for (campaignId of campaignIdsList) {
-    console.info('Fetching Merit Rewards for', campaignId)
+    console.info("Fetching Merit Rewards for", campaignId);
     let addressesEligible;
     try {
       addressesEligible = await fetch(
         `https://api.merkl.xyz/v3/campaignUnclaimed?chainId=1&campaignId=${campaignId}`
-      )
-        .then((r) => r.json());
+      ).then((r) => r.json());
     } catch (e) {
       throw new Error(`Failed to fetch data from Merkl API: ${e}`);
     }
@@ -71,7 +81,10 @@ async function fetchMeritRewards(campaignIdsList) {
       if (user.unclaimed > 0) {
         const userCurrentbalance = eligibleAddresses.get(user.recipient);
         if (userCurrentbalance) {
-          eligibleAddresses.set(user.recipient, userCurrentbalance + user.unclaimed / 10 ** 18);
+          eligibleAddresses.set(
+            user.recipient,
+            userCurrentbalance + user.unclaimed / 10 ** 18
+          );
         } else {
           eligibleAddresses.set(user.recipient, user.unclaimed / 10 ** 18);
         }
@@ -82,8 +95,8 @@ async function fetchMeritRewards(campaignIdsList) {
 }
 
 addMeritRewards()
-.catch(console.error)
-.then(() => {
-  console.info('Exiting now.')
-  process.exit(0)
-})
+  .catch(console.error)
+  .then(() => {
+    console.info("Exiting now.");
+    process.exit(0);
+  });
