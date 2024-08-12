@@ -31,6 +31,24 @@
 		"tokenSymbol": "MYSO",
 		"isActive": true
 	},
+	"db1": {
+		"name": "DeBridge - First Distribution",
+		"description": "DBR is the native governance token of deBridge, enabling the community to participate in key decision-making processes that shape the direction of the ecosystem. ",
+		"twitter": "debridgefdn",
+		"page": "https://debridge.foundation",
+		"haveAirdropData": true,
+		"tokenSymbol": "DBR",
+		"isActive": true
+	},
+	"db2": {
+		"name": "DeBridge - Second Distribution",
+		"description": "DBR is the native governance token of deBridge, enabling the community to participate in key decision-making processes that shape the direction of the ecosystem. ",
+		"twitter": "debridgefdn",
+		"page": "https://debridge.foundation",
+		"haveAirdropData": true,
+		"tokenSymbol": "DBR",
+		"isActive": true
+	},
 	"mode": {
 		"name": "Mode",
 		"page": "https://claim.mode.network",

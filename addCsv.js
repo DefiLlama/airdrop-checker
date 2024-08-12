@@ -37,9 +37,11 @@ const csvConfigs_done = [
   { file: 'jup_allocation_final.csv', decimals: 0, key: 'jup', addressField: 'pubkey', valueField: 'amount' },
   { file: 'ekubo.csv', decimals: 0, key: 'ekubo', },
   { file: 'zk.csv', decimals: 0, key: 'zk', addressField: 'userId', valueField: 'tokenAmount' },
+  { file: 'debridge.csv', decimals: 0, key: 'db1', addressField: 'userId', valueField: 'dist1' },
 ]
 
 const csvConfigs = [
+  { file: 'debridge.csv', decimals: 0, key: 'db2', addressField: 'userId', valueField: 'dist2' },
 ]
 
 async function addCsv() {
@@ -70,6 +72,7 @@ async function addCsv() {
         if (idx % 10000 === 0) console.info('Processed', Number(100 * idx / csvData.length).toFixed(2), '%')
         const address = record[addressField]
         let value = record[valueField]
+        if (!value) return;
         // if (++i < 15)
         // console.log('address', address, 'value', value) 
         // return;
