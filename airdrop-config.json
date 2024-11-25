@@ -268,6 +268,13 @@
 		"haveAirdropData": true,
 		"tokenSymbol": "OP"
 	},
+	"op5": {
+		"name": "Optimism Airdrop series #5",
+		"page": "https://app.optimism.io/airdrops/5",
+		"isActive": true,
+		"haveAirdropData": true,
+		"tokenSymbol": "OP"
+	},
 	"psp": {
 		"name": "Paraswap",
 		"isActive": false,

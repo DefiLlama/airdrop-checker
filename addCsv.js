@@ -38,10 +38,11 @@ const csvConfigs_done = [
   { file: 'ekubo.csv', decimals: 0, key: 'ekubo', },
   { file: 'zk.csv', decimals: 0, key: 'zk', addressField: 'userId', valueField: 'tokenAmount' },
   { file: 'debridge.csv', decimals: 0, key: 'db1', addressField: 'userId', valueField: 'dist1' },
+  { file: 'debridge.csv', decimals: 0, key: 'db2', addressField: 'userId', valueField: 'dist2' },
 ]
 
 const csvConfigs = [
-  { file: 'debridge.csv', decimals: 0, key: 'db2', addressField: 'userId', valueField: 'dist2' },
+  { file: 'op_airdrop_5_simple_list.csv', decimals: 0, key: 'op5', addressField: 'address', valueField: 'op_total' },
 ]
 
 async function addCsv() {
