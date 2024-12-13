@@ -39,10 +39,12 @@ const csvConfigs_done = [
   { file: 'zk.csv', decimals: 0, key: 'zk', addressField: 'userId', valueField: 'tokenAmount' },
   { file: 'debridge.csv', decimals: 0, key: 'db1', addressField: 'userId', valueField: 'dist1' },
   { file: 'debridge.csv', decimals: 0, key: 'db2', addressField: 'userId', valueField: 'dist2' },
+  { file: 'op_airdrop_5_simple_list.csv', decimals: 0, key: 'op5', addressField: 'address', valueField: 'op_total' },
 ]
 
 const csvConfigs = [
-  { file: 'op_airdrop_5_simple_list.csv', decimals: 0, key: 'op5', addressField: 'address', valueField: 'op_total' },
+  { file: 'odos_retro_allocations1.csv', decimals: 0, key: 'odos1', addressField: 'User', valueField: 'Token Allocation' },
+  { file: 'odos_retro_allocations2.csv', decimals: 0, key: 'odos1', },
 ]
 
 async function addCsv() {
@@ -74,15 +76,17 @@ async function addCsv() {
         const address = record[addressField]
         let value = record[valueField]
         if (!value) return;
-        // if (++i < 15)
-        // console.log('address', address, 'value', value) 
-        // return;
         if (isNaN(+value)) {
           console.info('Invalid value for key', address, key, value)
           return;
         }
         if (decimals || decimals === 0) value = Math.round(value / 10 ** decimals)
         if (value < 1) return;
+        /* 
+          if (++i < 15)
+            console.log('address', address, 'value', value)
+          return;
+           */
         await setKey(address, key, value)
       })
 

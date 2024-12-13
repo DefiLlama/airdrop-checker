@@ -1,4 +1,14 @@
 {
+	"odos1": {
+		"name": "ODOS",
+		"description": "The next-generation smart order routing solution that’s redefining how you trade in DeF",
+		"twitter": "odosdao",
+		"discord": "https://discord.gg/odos",
+		"page": "https://app.odos.xyz/rewards",
+		"haveAirdropData": true,
+		"tokenSymbol": "ODOS",
+		"isActive": true
+	},
 	"zk": {
 		"name": "ZK Nation",
 		"description": "ZK Nation unites individuals, organizations, and technologies to realize theZK Credo, expand freedom and accelerate intentional innovation.",
