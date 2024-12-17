@@ -43,8 +43,7 @@ const csvConfigs_done = [
 ]
 
 const csvConfigs = [
-  { file: 'odos_retro_allocations1.csv', decimals: 0, key: 'odos1', addressField: 'User', valueField: 'Token Allocation' },
-  { file: 'odos_retro_allocations2.csv', decimals: 0, key: 'odos1', },
+  { file: 'final_odos_retro_allocations.csv', decimals: 0, key: 'odos1', addressField: 'User', valueField: 'Token Allocation' },
 ]
 
 async function addCsv() {
