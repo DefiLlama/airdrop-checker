@@ -328,5 +328,11 @@
 		"isActive": true,
 		"haveAirdropData": true,
 		"tokenSymbol": "GHO"
+	},
+	"desk": {
+		"name": "DESK",
+		"isActive": true,
+		"haveAirdropData": false,
+		"tokenSymbol": "DESK"
 	}
 }
