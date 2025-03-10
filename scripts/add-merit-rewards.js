@@ -26,6 +26,7 @@ const angleMeritCampaignsListGHO = [
   "0x94e2fad6dafbe8a8b177e1a15f20c56b4fb5c65fe0b7f054fcca3a136381a696", // round 10 stkGHO
   "0x516d9c49f9fb60f5bc95aeb376b876123a04a1cc5892cce110bc1e38ddeb3de3", // round 11 stkGHO
   "0x90ab0397fd9e06ff7ae14ae0afcc9604e5fc09b593391a550d59901be162a762", // round 12 stkGHO
+  "0x619deccb6c3d92baa12e0b693e85bfdbfa042519a35a91e0ba82639a70895a5e", // round 13 stkGHO
 ];
 
 async function addMeritRewards() {
