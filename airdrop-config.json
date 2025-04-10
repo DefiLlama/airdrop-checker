@@ -328,5 +328,12 @@
 		"isActive": true,
 		"haveAirdropData": true,
 		"tokenSymbol": "GHO"
+	},
+	"carrot": {
+		"name": "Carrot",
+		"page": "https://use.deficarrot.com",
+		"isActive": true,
+		"haveAirdropData": false,
+		"twitter": "DeFiCarrot"
 	}
 }
