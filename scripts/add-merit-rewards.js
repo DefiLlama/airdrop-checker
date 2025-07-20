@@ -27,6 +27,13 @@ const angleMeritCampaignsListGHO = [
   "0x516d9c49f9fb60f5bc95aeb376b876123a04a1cc5892cce110bc1e38ddeb3de3", // round 11 stkGHO
   "0x90ab0397fd9e06ff7ae14ae0afcc9604e5fc09b593391a550d59901be162a762", // round 12 stkGHO
   "0x619deccb6c3d92baa12e0b693e85bfdbfa042519a35a91e0ba82639a70895a5e", // round 13 stkGHO
+  "0xf727dc3f13eb06a961d03f12751c742383c86124a0b7e52f5d845052fe6fbc19", // round 14 stkGHO
+  "0x99e68d9088411533d87b5034eabf013e44f0ce0338b1755024759a9a260abec1", // round 15 stkGHO
+  // "0x6b2ced94a2430b144817eef667674a43d54ba549d20e5da417d2b88e0814b977", // round 16 stkGHO
+  "0x633c4299016f518b5fa20a6662e3302ef207cf51e2c51884bb3568991ba7a780", // round 16.5 stkGHO
+  "0x92487ee75d7fb3c48cca090a6def15db1424aa9339389e0f5249257135b2789c", // round 17 stkGHO
+  "0x44dd4d3a04dda7b0b448793ecf939063306a2a6352dea875dfd0f3918ac7a845", // round 18 sGHO
+  "0xacaf691ff0c92ef64a5d3fc41339b9936ddc744e7300781b8cbba3bface743b4", // round 19 sGHO
 ];
 
 async function addMeritRewards() {
